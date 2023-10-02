@@ -1,0 +1,130 @@
+@import "./global.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+
+  .topbar {
+    display: flex;
+    padding: 1.5rem;
+    // box-shadow: rgba(14, 2, 2, 0.061) 0px 3px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.318);;
+
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 6.25rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5rem;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      h2 {
+        color: $black;
+        font-family: $primary-font;
+        font-size: 1rem;
+        font-weight: 600;
+        gap: 1rem;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      h3 {
+        color: #141414;
+        font-family: $alt-font;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        align-items: center;
+      }
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6.25rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.10);;
+
+    .welcome {
+      h2 {
+        color: #141414;
+        font-family: $primary-font;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: rgba(20, 20, 20, 0.7);
+        font-family: $alt-font;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      width: 25rem;
+      padding: 1rem 2rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 0.75rem;
+      border: 1px solid #e7e7ed;
+      background: rgba(182, 179, 198, 0.14);
+
+      button {
+        display: flex;
+        background: none;
+        border: none;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          color: #c3c3c3;
+          font-size: 1.25rem;
+        }
+      }
+
+      input {
+        width: 100%;
+        background: none;
+        border: none;
+        color: #c3c3c3;
+        font-family: $alt-font;
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+}

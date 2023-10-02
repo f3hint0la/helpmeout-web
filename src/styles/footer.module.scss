@@ -1,0 +1,64 @@
+@import "./global.scss";
+
+footer {
+  display: inline-flex;
+  padding: 6.125rem 8.125rem;
+  //   padding-top: 4rem;
+  align-items: flex-start;
+  background: $primary-main;
+  gap: 15.1875rem;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .brand {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      margin-right: 10rem;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      h2 {
+        color: $white;
+        font-family: $secondary-font;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      margin-left: 8rem;
+      gap: 2rem;
+
+      .footerDetails {
+        margin-left: 15rem;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          color: $white;
+          font-family: $primary-font;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        a {
+          color: $white;
+          font-family: $alt-font;
+          font-size: 0.9rem;
+          font-weight: 400;
+          padding-top: 1.5rem;
+        }
+      }
+    }
+  }
+}

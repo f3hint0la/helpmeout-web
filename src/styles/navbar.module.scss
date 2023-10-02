@@ -1,0 +1,60 @@
+@import "./global.scss";
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6.5rem;
+  //   box-shadow: rgba(237, 231, 231, 0.35) 0px 8px 15px;
+  box-shadow: rgba(223, 217, 217, 0.232) 0px 8px 15px;
+  z-index: 100;
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    h2 {
+      color: $black;
+      font-family: $primary-font;
+      font-size: 1.25rem;
+      font-weight: 600;
+      gap: 1rem;
+    }
+  }
+
+  .navlink {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    a {
+      color: $black;
+      font-family: Work Sans;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    padding-top: 150px;
+    .navlink a {
+      display: none;
+    }
+  }
+}
